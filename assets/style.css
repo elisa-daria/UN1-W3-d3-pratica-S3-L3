@@ -1,18 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400;700&display=swap");
 body {
   font-family: "Roboto Mono", monospace;
+  background-image: url(vecteezy_cute-clouds-and-rainbow-seamless-pattern-for-kids-cute-baby_26693276.jpg);
+
+  background-repeat: repeat-y;
+  background-size: cover;
+  padding: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+header {
+  background-color: rgb(42, 26, 45);
+  box-sizing: content-box;
+  display: inline-block;
+  padding: 1em;
+  margin: 1em;
+  border-radius: 20px;
+  color: beige;
+}
+main {
+  background: linear-gradient(167deg, #44a822, #00000075);
+  border-radius: 58px 58px 58px 0px;
+  color: black;
+  display: block;
+  padding: 1.7em;
+  width: fit-content;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 h1 {
   font-weight: 700;
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.3em;
+  padding: 2em;
+}
+#task-creator {
+  color: whitesmoke;
+  border-radius: 5px;
+}
+#toDoButton {
+  border-radius: 10px;
+  background-color: #de6128;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+ul {
+  margin: 0.5em;
+  padding: 0.2em;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
 }
 #task-list {
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 20px;
   padding: 15px;
   box-sizing: content-box;
 }
 .complete {
-  text-decoration: line-through red;
+  text-decoration: line-through #8f0202;
 }
 span {
   display: flex;
