@@ -5,12 +5,11 @@ formStructure.addEventListener("submit", function (e) {
   console.log(taskToCommit.value);
   taskToCommit.value;
   const itemToDo = document.createElement("ul");
-  itemToDo.innerHTML = `<li>${taskToCommit.value}</li>`;
-  //   const itemDone = document.querySelectorAll("li");
-  //   itemDone.addEventListener("click", function () {
-  //     itemDone.style.textDecorationLine = underline;
-  //   });---------> breaking my head on this wall
+  itemToDo.innerHTML = `<li">${taskToCommit.value}</li>`;
 
+  itemToDo.addEventListener("click", function () {
+    itemToDo.classList.add("complete");
+  });
   const toDoList = document.getElementById("task-list");
   toDoList.appendChild(itemToDo);
   taskToCommit.value = "";
