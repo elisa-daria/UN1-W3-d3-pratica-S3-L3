@@ -5,7 +5,7 @@ formStructure.addEventListener("submit", function (e) {
   console.log(taskToCommit.value);
   taskToCommit.value;
   const itemToDo = document.createElement("ul");
-  itemToDo.innerHTML = `<li">${taskToCommit.value}</li>`;
+  itemToDo.innerHTML = `<li>${taskToCommit.value}</li>`;
 
   itemToDo.addEventListener("click", function () {
     itemToDo.classList.add("complete");
