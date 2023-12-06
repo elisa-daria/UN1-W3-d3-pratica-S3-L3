@@ -14,3 +14,8 @@ h1 {
 .complete {
   text-decoration: line-through red;
 }
+span {
+  display: flex;
+
+  justify-content: flex-end;
+}

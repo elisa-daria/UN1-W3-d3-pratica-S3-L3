@@ -10,6 +10,17 @@ formStructure.addEventListener("submit", function (e) {
   itemToDo.addEventListener("click", function () {
     itemToDo.classList.add("complete");
   });
+  itemToDo.addEventListener("dblclick", function () {
+    itemToDo.classList.remove("complete");
+  });
+
+  const deleteButton = document.createElement("span");
+  deleteButton.innerHTML = `<span<i class="fas fa-times" style="color: #000000;"></i></span>`;
+  deleteButton.addEventListener("click", function () {
+    deleteButton.parentElement.remove();
+  });
+  itemToDo.appendChild(deleteButton);
+
   const toDoList = document.getElementById("task-list");
   toDoList.appendChild(itemToDo);
   taskToCommit.value = "";
